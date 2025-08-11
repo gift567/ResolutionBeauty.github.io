@@ -129,29 +129,36 @@
         <p>Relax and unwind with our 60-minute full body massage to relieve stress and tension.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
         
-        <div  class="booking-form">
-          <form action="https://formsubmit.co/giftkateule719@gmail.com" method="post">
-          <label for="date1">Select Date</label>
-          <input type="date" id="date1" required>
+       <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
+    
+    <!-- Optional: Prevent spam -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Optional: Redirect after submission -->
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <label for="people1">Number of People</label>
-          <select id="people1">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-           
-          </div>
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
 
-          <label for="pop1">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop1" accept="image/*,application/pdf" required>
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong><br>
+    </div>
 
-          <button class="submit-btn">Submit Booking</button>
-                   </form>
-        </div>
+    <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf" required>
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
 
       </div>
 
