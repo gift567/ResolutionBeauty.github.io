@@ -994,7 +994,7 @@ h1, h2, h3, h4, h5,
   color: #999999; }
 
 .block-25 ul li a .meta {
-  color: #8bc34a; }
+  color:  #01bfcf; }
 
 .block-25 ul li a:hover img {
   opacity: .5; }
@@ -1023,7 +1023,7 @@ h1, h2, h3, h4, h5,
     position: absolute;
     width: 30px;
     height: 30px;
-    background: #8bc34a;
+    background:  #01bfcf;
     border-radius: 50%;
     color: #fff; }
     .player .team-number > span {

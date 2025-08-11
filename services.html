@@ -49,7 +49,7 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2" data-aos="fade-down">
-                       <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0"><img style="height: 13vh; margin-left: 3vh;" src="./images/rbslogo-removebg-preview.png"/></a></h1>
+           <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0"><img style="height: 13vh; margin-left: 3vh;" src="./images/rbslogo-removebg-preview.png"/></a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
@@ -59,25 +59,24 @@
                 <li><a href="about.html">About</a></li>
                 <li class="active"><a href="services.html">Services</a></li>
                 <li><a href="booking.html">Book Online</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                                 <li ><a  style="background-color: #01bfcf; height: 6vh; width: 18vh; color: #fff; border-radius: 50px;" href="tel:+260970824685">Contact</a></li>
               </ul>
             </nav>
           </div>
 
           <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
                 <li>
-                  <a href="#" class="pl-0 pr-3 text-black"><span class="icon-facebook"></span></a>
+                  <a href="https://www.facebook.com/pinkykafula" class="pl-0 pr-3 text-black"><span class="icon-facebook"></span></a>
+                </li>
+                
+                <li>
+                  <a href="https://www.instagram.com/resolution_beauty?igsh=aG13M2NoZTB4NW92" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
                 </li>
                 <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-youtube-play"></span></a>
+                  <a href="https://www.tiktok.com/@resolution.beauty?_t=ZM-8ymbslTFDt8&_r=1" class="pl-3 pr-3 text-black"><i class="fab fa-tiktok"></i></a> 
                 </li>
               </ul>
             </div>
@@ -97,14 +96,14 @@
 
     <div class="slide-one-item home-slider owl-carousel">
    
-      <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/Luso\ creative\ space\ \(13\).jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/Service\ bg.png);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h2 class="text-white font-weight-light mb-2 display-1">See Our Services!</h2>
 
-              <p><a href="#" class="btn btn-black py-3 px-5">Book Now!</a></p>
+              <p><a href="./booking.html" class="btn btn-black py-3 px-5">Book Now!</a></p>
             </div>
           </div>
         </div>
@@ -131,29 +130,38 @@
         
        <div class="booking-form">
   <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
-    
-    <!-- Optional: Prevent spam -->
+
+    <!-- Hidden settings for FormSubmit -->
     <input type="hidden" name="_captcha" value="false">
-    
-    <!-- Optional: Redirect after submission -->
     <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
+
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_">Phone number</label>
+     <input type="number" name="phone number" >
 
     <label for="date1">Select Date</label>
     <input type="date" id="date1" name="booking_date" required>
 
     <label for="people1">Number of People</label>
-    <select id="people1" name="number_of_people">
+    <select id="people1" name="number_of_people" required>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3+">3+</option>
     </select>
 
     <div class="mobile-money">
-      Airtel Money: <strong>097X XXX XXX</strong><br>
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
     </div>
 
-    <label for="pop1">Upload Proof of Payment (POP)</label>
-    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf" required>
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
 
     <button type="submit" class="submit-btn">Submit Booking</button>
   </form>
@@ -170,27 +178,48 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+              <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
+
       </div>
 
 
@@ -203,27 +232,47 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+               <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
       </div>
 
 
@@ -237,27 +286,47 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+               <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
       </div>
 
 
@@ -270,27 +339,46 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
+       <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
       </div>
 
            <!-- Repeat for other services -->
@@ -301,27 +389,47 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+               <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
       </div>
 
       <!-- Add more cards as needed -->
@@ -345,27 +453,49 @@
         </div>
         <p>Relax and unwind with our 60-minute full body massage to relieve stress and tension.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date1">Select Date</label>
-          <input type="date" id="date1" required>
 
-          <label for="people1">Number of People</label>
-          <select id="people1">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
 
-          <label for="pop1">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop1" accept="image/*,application/pdf" required>
+              <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
+
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
+
       </div>
 
       <!-- Repeat for other services -->
@@ -376,27 +506,48 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+         <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
+
       </div>
 
 
@@ -409,27 +560,47 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
+       <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
+
       </div>
 
 
@@ -443,27 +614,47 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+               <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
       </div>
 
 
@@ -476,27 +667,48 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+               <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
+
       </div>
 
            <!-- Repeat for other services -->
@@ -507,27 +719,48 @@
         </div>
         <p>Deep cleansing, exfoliation, and hydration tailored to your skin type.</p>
         <button class="book-btn" onclick="toggleForm(this)">Book Now</button>
-        <div class="booking-form">
-          <label for="date2">Select Date</label>
-          <input type="date" id="date2" required>
 
-          <label for="people2">Number of People</label>
-          <select id="people2">
-            <option>1</option>
-            <option>2</option>
-            <option>3+</option>
-          </select>
 
-          <div class="mobile-money">
-            Airtel Money: <strong>097X XXX XXX</strong><br>
-            MTN Money: <strong>096X XXX XXX</strong>
-          </div>
+       <div class="booking-form">
+  <form action="https://formsubmit.co/giftkateule719@gmail.com" method="POST" enctype="multipart/form-data">
 
-          <label for="pop2">Upload Proof of Payment (POP)</label>
-          <input type="file" id="pop2" accept="image/*,application/pdf" required>
+    <!-- Hidden settings for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.github.io/thank-you.html">
 
-          <button class="submit-btn">Submit Booking</button>
-        </div>
+     <label for="full_name">Full name</label>
+     <input type="text" name="full name" >
+
+      <label for="Phone_number">Phone number</label>
+     <input type="number" name="phone number" >
+
+    <label for="date1">Select Date</label>
+    <input type="date" id="date1" name="booking_date" required>
+
+    <label for="people1">Number of People</label>
+    <select id="people1" name="number_of_people" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3+">3+</option>
+    </select>
+
+    <div class="mobile-money">
+      Airtel Money: <strong>097X XXX XXX</strong>
+      MTN Money: <strong>096X XXX XXX</strong>
+    </div>
+
+     <label for="pop2">Upload Proof of Payment (POP)</label>
+     <input type="file" id="pop2" name="pop" accept="image/*,application/pdf" required>
+
+    <!-- Remove file upload for now unless you upgrade FormSubmit plan -->
+    <!-- <label for="pop1">Upload Proof of Payment (POP)</label>
+    <input type="file" id="pop1" name="proof_of_payment" accept="image/*,application/pdf"> -->
+
+    <button type="submit" class="submit-btn">Submit Booking</button>
+  </form>
+</div>
+
+
       </div>
 
       <!-- Add more cards as needed -->
